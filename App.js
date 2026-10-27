@@ -85,7 +85,9 @@ export default function App() {
         />
       </View>
 
-      <Pressable onPress={() => setVisibleModal(true)} style={styles.newRegister}>
+      <Pressable 
+      onPress={() => setVisibleModal(true)} 
+      style={styles.newRegister}>
         <Text style={styles.textnewRegister}>+</Text>
       </Pressable>
 
@@ -93,7 +95,9 @@ export default function App() {
         <View style={styles.modalContainer}>
           <View style={styles.headerModal}>
             <Text style={styles.TextoModal}>Nuevo Producto</Text>
-            <Pressable onPress={() => setVisibleModal(false)} style={styles.btnCerrarModal}>
+            <Pressable 
+            onPress={() => setVisibleModal(false)} 
+            style={styles.btnCerrarModal}>
               <Text style={styles.textnewRegister}>-</Text>
             </Pressable>
           </View>
